@@ -1,7 +1,7 @@
 <template>
     <div id="body">
          <Logo />
-        <div class="grid grid-flow-col grid-cols-2 gap-10 items-center;">
+        <div id="sign" class="grid grid-flow-col grid-cols-2 gap-10 items-center;">
             <SideImage :class= 'isClass' :image='isImage'/>
             <div class="form-box">
             <div class="container-head">
@@ -71,5 +71,13 @@ export default {
 }
 .arrow {
     margin: 0 !important;
+}
+@media (max-width: 995px) {
+    #sign {
+        display: block;
+        .ads {
+            display: none
+        }
+    }
 }
 </style>
