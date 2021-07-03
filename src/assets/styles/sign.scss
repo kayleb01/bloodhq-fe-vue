@@ -1,0 +1,119 @@
+.logo {
+    margin: 2em 0;
+    max-width: 8em;
+    img {
+        width: 100%
+    }
+}
+
+.ads {
+    max-width: 38em;
+    img {
+        width: 100%;
+    }
+}
+
+.arrow {
+    margin: 1em 0;
+}
+
+.container-head {
+    margin: 1.5em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .arrow {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.steps {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    li {
+        width: 40px;
+        background-color: lightgray;
+        height: 5px;
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 .2em;
+    }
+    li.active {
+        background-color: black;
+    }
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1em;
+    margin: .5em 0;
+    max-width: 20em;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    label {
+        font-size: 1.1em;
+        font-weight: 500;
+        margin: .5em 0;
+    }
+    input {
+        font-size: 1em;
+        color: rgb(24, 23, 23);
+        background-color: #F8F9FC;
+        text-transform: capitalize;
+        font-weight: 500;
+        padding: 0 1em;
+        height: 3.5em;
+        border-radius: .3em;
+        border: 0.3px solid #DFDFDF;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #F8F9FC;
+    }
+    .p-password {
+        height: 3.5em;
+        width: 100%
+    }
+}
+
+.box {
+    height: 3.5em;
+    border-radius: .3em;
+    border: 0.3px solid #DFDFDF;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F8F9FC;
+}
+
+button.box {
+    background: #D33A39;
+    border-radius: 6px;
+    width: 100%;
+    color: white;
+    margin: 1em 0;
+    font-weight: 500;
+    font-size: 1.2em;
+    height: 3em;
+}
+
+@media (max-width: 995px) {
+    #signin {
+        display: block;
+        .ads {
+            display: none
+        }
+    }
+}
