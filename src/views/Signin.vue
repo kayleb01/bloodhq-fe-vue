@@ -1,7 +1,7 @@
 <template>
     <div id="body" >
         <Logo />
-        <div class="grid grid-flow-col grid-cols-2 gap-10 items-center;">
+        <div id="signin" class="grid grid-flow-col grid-cols-2 gap-10 items-center;">
             <SideImage :class= 'isClass' :image='isImage'/>
         <div class="form-box">
             <PrevBtn />
@@ -60,4 +60,12 @@ export default {
         height: 3.5em;
         width: 100%
     }
+    @media (max-width: 995px) {
+    #signin {
+        display: block;
+        .ads {
+            display: none
+        }
+    }
+}
 </style>
